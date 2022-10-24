@@ -25,7 +25,7 @@ func main() {
 			"Region": os.Getenv("FLY_REGION"),
 		}
 
-		t.ExecuteTemplate(w, "index.html.tmpl", data)
+		t.ExecuteTemplate(w, "post.html.tmpl", data)
 	})
 
 	log.Println("listening on", port)
